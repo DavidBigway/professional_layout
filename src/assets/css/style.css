@@ -164,3 +164,9 @@ nav ul li a {
 .banner__title p span {
   color: var(--pink);
 }
+
+/* globals */
+
+.pointer {
+  cursor: pointer;
+}
