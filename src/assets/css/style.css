@@ -13,10 +13,8 @@ header {
 }
 .header-top {
   display: flex;
-  max-width: 1138px;
   height: 100px;
   align-items: center;
-  margin: auto;
 }
 .header-top__left,
 .header-top__right {
@@ -225,8 +223,71 @@ nav > div {
 .menu-item:hover .mega-box {
   display: flex;
 }
-/* globals */
 
+/* offers */
+.offers {
+  height: 825px;
+  margin: 100px 0;
+}
+.offers-grid {
+  height: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'item1 item2'
+    'item1 item4'
+    'item3 item4';
+}
+
+.offer-item {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+}
+.item1 {
+  background: url('/src/assets/img/offers-men.png') no-repeat center;
+  grid-area: item1;
+}
+.item2 {
+  background: url('/src/assets/img/offers-accesories.png') no-repeat center;
+  grid-area: item2;
+}
+.item3 {
+  background: url('/src/assets/img/offers-women.png') no-repeat center;
+  grid-area: item3;
+}
+.item4 {
+  background: url('/src/assets/img/offers-kids.png') no-repeat center;
+  grid-area: item4;
+}
+
+.offer-item__title {
+  position: absolute;
+  top: 25px;
+  background-color: #fff;
+  padding: 15px 20px;
+}
+.offer-item__title p {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+.offer-item__title h4 {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--pink);
+}
+
+/* globals */
+.container {
+  max-width: 1138px;
+  margin: auto;
+}
 .pointer {
   cursor: pointer;
 }
