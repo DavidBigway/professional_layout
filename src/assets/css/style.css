@@ -1,10 +1,9 @@
 * {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 
 header {
@@ -16,7 +15,8 @@ header {
   height: 100px;
   align-items: center;
 }
-.header-top__left, .header-top__right {
+.header-top__left,
+.header-top__right {
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -29,7 +29,23 @@ header {
 .header-top__right {
   justify-content: flex-end;
 }
-
+header .logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo__text {
+  margin-left: 14px;
+  font-size: 27px;
+  color: var(--text-black);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.logo__text span {
+  color: var(--pink);
+  font-weight: 700;
+}
 .search {
   display: flex;
   height: 38px;
@@ -58,7 +74,7 @@ header {
 .search-btn {
   height: 100%;
   padding: 18px;
-  background: url("/src/assets/img/search-icon.png") no-repeat center;
+  background: url('/src/assets/img/search-icon.png') no-repeat center;
   outline: 1px solid #e6e6e6;
   border-radius: 0 3px 3px 0;
 }
@@ -77,14 +93,14 @@ header {
   height: 6px;
   width: 9px;
   margin-left: 8px;
-  background: url("/src/assets/img/dropdown-triangle.png") no-repeat;
+  background: url('/src/assets/img/dropdown-triangle.png') no-repeat;
 }
 
 .dropdow-triangle-white {
   height: 6px;
   width: 9px;
   margin-left: 12px;
-  background: url("/src/assets/img/dropdown-triangle-white.png") no-repeat;
+  background: url('/src/assets/img/dropdown-triangle-white.png') no-repeat;
 }
 
 /* navigation */
@@ -117,7 +133,7 @@ nav > div {
 
 /* banner */
 .banner-section {
-  background: url("/src/assets/img/banner-background.png") no-repeat center;
+  background: url('/src/assets/img/banner-background.png') no-repeat center;
   height: 613px;
   display: flex;
 }
@@ -167,7 +183,7 @@ nav > div {
   transform: translateY(12px);
 }
 .mega-box ::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   height: 10px;
@@ -218,8 +234,8 @@ nav > div {
   display: flex;
 }
 
-/* categories */
-.categories {
+/* offers */
+.offers {
   height: 825px;
   margin: 100px 0;
 }
@@ -230,22 +246,22 @@ nav > div {
   gap: 20px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "item1 item2" "item1 item4" "item3 item4";
+  grid-template-areas: 'item1 item2' 'item1 item4' 'item3 item4';
 }
 .categories-grid .item-1 {
-  background: url("/src/assets/img/categories-men.png") no-repeat center;
+  background: url('/src/assets/img/categories-men.png') no-repeat center;
   grid-area: item1;
 }
 .categories-grid .item-2 {
-  background: url("/src/assets/img/categories-accesories.png") no-repeat center;
+  background: url('/src/assets/img/categories-accesories.png') no-repeat center;
   grid-area: item2;
 }
 .categories-grid .item-3 {
-  background: url("/src/assets/img/categories-women.png") no-repeat center;
+  background: url('/src/assets/img/categories-women.png') no-repeat center;
   grid-area: item3;
 }
 .categories-grid .item-4 {
-  background: url("/src/assets/img/categories-kids.png") no-repeat center;
+  background: url('/src/assets/img/categories-kids.png') no-repeat center;
   grid-area: item4;
 }
 
@@ -261,13 +277,13 @@ nav > div {
   background-color: #fff;
   padding: 15px 20px;
 }
-.category-item__title p {
+.offer-item__title p {
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
   color: #222222;
 }
-.category-item__title h4 {
+.offer-item__title h4 {
   font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
@@ -326,22 +342,22 @@ nav > div {
 }
 
 .offer-image {
-  background-image: url("/src/assets/img/offers-image.png");
+  background-image: url('/src/assets/img/offers-image.png');
   width: 100%;
   box-shadow: inset 0 0px 200px #000000;
 }
 .offer-image .item-1::before {
-  content: url("/src/assets/img/free-delivery-car.png");
+  content: url('/src/assets/img/free-delivery-car.png');
   margin-right: 2rem;
   min-width: 50px;
 }
 .offer-image .item-2::before {
-  content: url("/src/assets/img/sales-discount.png");
+  content: url('/src/assets/img/sales-discount.png');
   margin-right: 2rem;
   min-width: 50px;
 }
 .offer-image .item-3::before {
-  content: url("/src/assets/img/quality-assurance.png");
+  content: url('/src/assets/img/quality-assurance.png');
   margin-right: 2rem;
   min-width: 50px;
 }
@@ -350,7 +366,11 @@ nav > div {
 .subscribe {
   display: flex;
   min-height: 440px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(/src/assets/img/subsribe-background.png);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(/src/assets/img/subsribe-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -485,7 +505,7 @@ footer {
 
 /* globals */
 .container {
-  max-width: 1140px;
+  max-width: 1138px;
   margin: auto;
 }
 
@@ -534,7 +554,7 @@ footer {
   display: grid;
   margin-left: 108px;
   -moz-column-gap: 13px;
-       column-gap: 13px;
+  column-gap: 13px;
   grid-auto-flow: column;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -555,7 +575,7 @@ footer {
   position: absolute;
   height: 47px;
   width: 47px;
-  background: url("./../img/arrow.png"), #eaeaea;
+  background: url('./../img/arrow.png'), #eaeaea;
   background-repeat: no-repeat;
   background-position: center;
   top: 50%;
@@ -563,7 +583,7 @@ footer {
 }
 
 .arrow-btn:hover {
-  background: url("./../img/arrow.png"), #e1e1e1;
+  background: url('./../img/arrow.png'), #e1e1e1;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -575,4 +595,4 @@ footer {
 .next-btn {
   transform: rotate(180deg) translateY(-50%);
   right: 0;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
