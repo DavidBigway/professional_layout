@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/assets/css/style.css" />
+    <link rel="stylesheet" href="src/assets/css/single-page.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -365,82 +366,146 @@
         </ul>
       </div>
     </nav>
-    <div class="banner-section">
-      <div class="banner">
-        <div class="banner__separator"></div>
-        <div class="banner__title">
-          <h2>the brand</h2>
-          <p>of luxerious <span>fashion</span></p>
-        </div>
-      </div>
-    </div>
-    <div class="categories">
-      <div class="categories-grid container">
-        <a href="#" class="category-item item-1">
-          <div class="category-item__title">
-            <p>hOT dEAL</p>
-            <h4>FOR MEN</h4>
-          </div>
-        </a>
-        <a href="#" class="category-item item-2">
-          <div class="category-item__title">
-            <p>LUXIROUS & trendy</p>
-            <h4>ACCESORIES</h4>
-          </div>
-        </a>
-        <a href="#" class="category-item item-3">
-          <div class="category-item__title">
-            <p>30% offer</p>
-            <h4>women</h4>
-          </div>
-        </a>
-        <a href="#" class="category-item item-4">
-          <div class="category-item__title">
-            <p>new arrivals</p>
-            <h4>FOR kids</h4>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="offers">
-      <div class="offer-flex container">
-        <div class="offer-image">
-          <div class="offer-title">
-            <h4>30% <span>offer</span></h4>
-            <p>for women</p>
-          </div>
-        </div>
-        <div class="offer-service">
-          <div class="offer-service__item item-1">
-            <div class="offer-service__text">
-              <h5 class="offer-service__title">Free Delivery</h5>
-              <div class="offer-service__description">
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </div>
-            </div>
-          </div>
-          <div class="offer-service__item item-2">
-            <div class="offer-service__text">
-              <h5 class="offer-service__title">Sales & discounts</h5>
-              <div class="offer-service__description">
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </div>
-            </div>
-          </div>
-          <div class="offer-service__item item-3">
-            <div class="offer-service__text">
-              <h5 class="offer-service__title">Quality assurance</h5>
-              <div class="offer-service__description">
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </div>
-            </div>
+
+    <main>
+      <div class="breadcrumbs">
+        <div class="container h100">
+          <div class="breadcrumbs-content flex">
+            <h2>New Arrivals</h2>
+            <p>Home / Men / <span> New Arrivals</span></p>
           </div>
         </div>
       </div>
-    </div>
+      <div class="single-page-banner">
+        <div class="prev-btn arrow-btn"></div>
+        <div class="single-page-banner__images">
+          <img
+            src="/src/assets/img/single-page-banner-background.png"
+            alt="spbb"
+          />
+          <img
+            src="/src/assets/img/single-page-banner-background.png"
+            alt="spbb"
+          />
+          <img
+            src="/src/assets/img/single-page-banner-background.png"
+            alt="spbb"
+          />
+        </div>
+        <div class="next-btn arrow-btn"></div>
+      </div>
+      <div class="single-page-cart">
+        <div class="container">
+          <div class="single-page-cart__add-to-cart">
+            <div class="product-info">
+              <div class="product-info__category">women collection</div>
+              <div class="carousel">
+                <div class="carousel__line"></div>
+                <div class="carousel__line carousel-active"></div>
+                <div class="carousel__line"></div>
+              </div>
+              <div class="product-info__title">
+                <h3>Moschino Cheap And Chic</h3>
+              </div>
+              <div class="product-info__about">
+                <p>
+                  Compellingly actualize fully researched processes before
+                  proactive outsourcing. Progressively syndicate collaborative
+                  architectures before cutting-edge services. Completely
+                  visualize parallel core competencies rather than exceptional
+                  portals.
+                </p>
+                <div class="product-info__about-material">
+                  MATERIAL: <span>COTTON</span>
+                </div>
+                <div class="product-info__about-designer">
+                  DESIGNER: <span>BINBURHAN</span>
+                </div>
+                <div class="product-info__about-price">$561</div>
+              </div>
+            </div>
+            <hr />
+            <div class="product-select">
+              <div class="product-select__params">
+                <div class="choose-color">
+                  <h4>choose color</h4>
+                  <select>
+                    <option value="0">RED</option>
+                    <option value="1">BLACK</option>
+                  </select>
+                </div>
+                <div class="choose-size">
+                  <h4>choose size</h4>
+                  <select>
+                    <option value="0">XXL</option>
+                    <option value="1">XL</option>
+                  </select>
+                </div>
+                <div class="quantity">
+                  <h4>quantity</h4>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="product-select__add-btn">
+                <div class="cart-icon"></div>
+                <span>Add to Cart</span>
+              </div>
+            </div>
+          </div>
+          <div class="single-page-cart__like-also">
+            <h3>you may like also</h3>
+            <div class="products-cards">
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="/src/assets/img/like-also-blaze-leggings.png"
+                    alt="1"
+                  />
+                </div>
+                <div class="product-card__info">
+                  <h5>blaze leggings</h5>
+                  <p>$52.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="/src/assets/img/like-also-alexa-sweater.png"
+                    alt="1"
+                  />
+                </div>
+                <div class="product-card__info">
+                  <h5>alexa sweater</h5>
+                  <p>$52.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img src="/src/assets/img/like-also-agnestop.png" alt="1" />
+                </div>
+                <div class="product-card__info">
+                  <h5>agnestop</h5>
+                  <p>$52.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="/src/assets/img/like-also-sylva-sweater.png"
+                    alt="1"
+                  />
+                </div>
+                <div class="product-card__info">
+                  <h5>sylva sweater</h5>
+                  <p>$52.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <div class="subscribe">
       <div class="subscribe-flex container">
         <div class="subscribe-feedbacks">
@@ -469,7 +534,7 @@
             <h5>Subscribe</h5>
             <p>FOR OUR NEWLETTER AND PROMOTION</p>
           </div>
-          <div class="subcribe-send__input">
+          <div class="subscribe-send__input">
             <form>
               <input type="text" placeholder="Enter Your Email" />
               <button type="submit">Subscribe</button>
